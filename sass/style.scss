@@ -110,6 +110,7 @@ p {
 	margin-right: auto;
 	max-width: 1200px;
 	padding: 0 16px;
+	@extend %clear_a;
 }
 
 
@@ -153,6 +154,12 @@ p {
 			}
 		}
 	}
+}
+.bg_header {
+	background: image-url('img-5043.jpg') no-repeat center center;
+	background-size: cover;
+	height: 130px;
+	@extend %clear_all;
 }
 
 
