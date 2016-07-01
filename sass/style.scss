@@ -1,0 +1,195 @@
+/*
+  Front end - Evgeniy Ivanov
+  */
+// Global variables
+// ========================================================================
+
+//
+// Breakpoints
+//
+$breakpoint-small:                               480px !default;
+$breakpoint-medium:                              760px !default;
+$breakpoint-large:                               960px !default;
+$breakpoint-xlarge:                              1200px !default;
+
+$breakpoint-mini-max:                            ($breakpoint-small - 1) !default;
+$breakpoint-small-max:                           ($breakpoint-medium - 1) !default;
+$breakpoint-medium-max:                          ($breakpoint-large - 1) !default;
+$breakpoint-large-max:                           ($breakpoint-xlarge - 1) !default;
+
+$main_font:										 'Open Sans';
+$second_font:									 'Prosto One';
+
+// Mixin
+%clear_a {
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+%clear_b {
+	&:before {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+%clear_all {
+	@extend %clear_a;
+	@extend %clear_b;
+}
+
+.fl__left {
+	float: left;
+}
+
+.fl_right {
+	float: right;
+}
+
+.form__row {
+	@extend %clear_a;
+}
+
+
+@import 'compass/css3';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Prosto+One);
+
+* {
+	margin: 0;
+	padding: 0;
+	@include box-sizing(border-box);
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+	@include box-sizing(border-box);
+}
+
+html,body,.wrapper {
+	height: 100%;
+	position: relative;
+}
+
+body { 
+	font: 12px/18px $main_font, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+ol,ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 0 -45px 0; /* отрицательный нижний отступ на высоту футера */
+    // padding: 0 0 200px 0;
+}
+
+.container_center {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+	padding: 0 16px;
+}
+
+
+/* Header
+ ----------------------------------------------------------------------------- */
+.header {
+	padding: 15px 0;
+	height: 95px;
+	@extend %clear_all;
+	.logo {
+		float: left;
+	}
+}
+.navbar {
+	&.top_menu {
+		padding: 20px 0;
+		float: right;
+		.navabr__item {
+			padding-left: 70px;
+			display: inline-block;
+			&:first-child {
+				padding-left: 0;
+			}
+		}
+		.navabr__link {
+			color: #666;
+			font-family: $main_font;
+			font-size: 13px;
+			font-weight: 400;
+			text-transform: uppercase;
+			&:hover {
+				text-decoration: none;
+				&:after {
+					content: '';
+					display: block;
+					height: 3px;
+					background-color: #0079b2;
+					margin-top: 10px;
+					transition: all 0.3s;
+				}
+			}
+		}
+	}
+}
+
+
+/* Middle
+ ----------------------------------------------------------------------------- */
+.main__content {
+	padding-bottom: 45px;
+}
+
+
+
+
+
+/* Footer
+ ----------------------------------------------------------------------------- */
+.footer {
+	height: 45px;
+	background-color: #0079b2;
+	color: #fff;
+	position: relative;
+	z-index: 2;
+	@extend %clear_a;
+	.navbar {
+		float: left;
+		.navbar_item {
+			display: inline-block;
+			padding: 13px 43px;
+			&:first-child {
+				padding-left: 0;
+			}
+			.navbar_link {
+				color: #fff;
+			}
+		}
+	}
+	.copy {
+		float: right;
+		padding: 13px 0;
+	}
+}
