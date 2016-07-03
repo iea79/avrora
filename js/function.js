@@ -5,15 +5,6 @@ $(document).ready(function() {
 		event.preventDefault();
 	});
 
-	// Home slider
-	$('.main_slider').slick({
-		infinite: true,
-		dots: true,
-		arrows: false,
-		slidesToShow: 1,
-		slidesToScroll: 1
-	});
-
 	// Top menu hover
 	$('.navabr__link').on('mouseenter', function(event) {
 		event.preventDefault();
@@ -24,5 +15,7 @@ $(document).ready(function() {
 		event.preventDefault();
 		$('.navbar__drop').removeClass('open');
 	});
+
+	$(".fancybox").fancybox();
 
 });

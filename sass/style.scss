@@ -84,6 +84,7 @@ body {
 a {
 	text-decoration: none;
 	cursor: pointer;
+	color: #006bb7;
 	&:hover {
 		text-decoration: underline;
 	}
@@ -170,15 +171,15 @@ input[type="text"] {
 }
 .navbar {
 	&.top_menu {
-		padding: 35px 0 46px;
+		padding: 37px 0 44px;
 		float: right;
 		.navabr__item {
-			padding-left: 70px;
+			padding-left: 68px;
 			display: inline-block;
 			&:first-child {
 				padding-left: 0;
 				.navbar_sub {
-					padding-left: 448px;
+					padding-left: 452px;
 					&:before {
 						margin-left: 34px;
 					}
@@ -186,7 +187,7 @@ input[type="text"] {
 			}
 			&:nth-child(2) {
 				.navbar_sub {
-					padding-left: 611px;
+					padding-left: 615px;
 					&:before {
 						margin-left: 16px;
 					}
@@ -194,7 +195,7 @@ input[type="text"] {
 			}
 			&:nth-child(3) {
 				.navbar_sub {
-					padding-left: 737px;
+					padding-left: 740px;
 					&:before {
 						margin-left: 68px;
 					}
@@ -202,9 +203,9 @@ input[type="text"] {
 			}
 			&:nth-child(4) {
 				.navbar_sub {
-					padding-left: 975px;
+					padding-left: 980px;
 					&:before {
-						margin-left: 25px;
+						margin-left: 21px;
 					}
 				}
 			}
@@ -287,7 +288,7 @@ input[type="text"] {
 .bg_header {
 	background: image-url('img-5043.jpg') no-repeat center center;
 	background-size: cover;
-	height: 130px;
+	height: 96px;
 	@extend %clear_all;
 }
 
@@ -342,9 +343,9 @@ input[type="text"] {
 			opacity: .5;
 		}
 		.slide_content {
-			margin-top: 114px;
+			margin-top: 109px;
 			float: right;
-			width: 900px;
+			width: 910px;
 			color: white;
 			font-size: 18px;
 			font-weight: 400;
@@ -355,10 +356,10 @@ input[type="text"] {
 			text-shadow: 2.4px 4.4px 5px rgba(0, 0, 0, 0.5);
 			font-size: 48px;
 			font-weight: 600;
-			margin-bottom: 14px;
+			margin-bottom: 17px;
 		}
 		.slide_subtitle {
-			padding-bottom: 15px;
+			padding-bottom: 17px;
 			margin-bottom: 25px;
 			border-bottom: 1px solid #fff;
 			max-width: 616px;
@@ -496,7 +497,7 @@ input[type="text"] {
 			border: 1px solid #2282b6;
 			width: 54px;
 			text-align: center;
-			padding: 8px;
+			padding: 6px;
 			vertical-align: middle;
 			font-weight: 700;
 			margin-right: 15px;
@@ -513,8 +514,376 @@ input[type="text"] {
 	}
 }
 
+// Sidebar
+.sidebar-nav {
+	float: left;
+	width: 270px;
+	margin-right: 30px;
+	background-color: #f7f7f7;
+	.sidebar-level1 {
+		padding-top: 27px;
+		padding-bottom: 17px;
+		padding-left: 38px;
+		border-top: 1px solid #e6e6e6;
+		&:first-child {border-top: 0;}
+		&.sidebar-info {
+			margin-bottom: 8px;
+		}
+		a, a:hover {
+			color: #0079b2;
+			font-size: 16px;
+			text-decoration: none;
+		}
+		.sidebar-ul2 {
+			margin-top: 12px;
+		}
+	}
+}
 
+.sidebar-level2 {
+	margin-left: -38px;
+	width: 270px;
+	border: 0px solid #000;
+	a {
+		display: block;
+		width: 100%;
+		padding-left: 50px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-right: 40px;
+		color: #808080 !important;
+		font-size: 12px !important;
+		line-height: 1.2;
+		border: 0px solid #000;
+		&:hover,
+		&:active,
+		&.active,
+		&:focus {background-color: #e6e6e6;}
+	}
+}
 
+// Хлебные крошки
+.our-partners .breadcrumbs,
+.news-section .breadcrumbs,
+.about-us .breadcrumbs {
+	margin-top: -2px;
+	margin-bottom: 28px;
+	li {
+		display: inline-block;
+		&:nth-child(n+2) {
+			&:before {
+				content: '/';
+				display: inline-block;
+				padding: 0 2px;
+				color: #999;
+			}
+		}
+	}
+	a {
+		font-size: 12px;
+		font-weight: 600;
+		color: #999;
+		text-decoration: none;
+		line-height: 14px;
+		&:hover,
+		&:active,
+		&.active {
+			color: #006bb7;
+		}
+	}
+}
+
+.our-partners h1,
+.news-section h1,
+.about-us h1 {
+	width: 100%;
+	margin-bottom: 26px;
+	color: #000;
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+// Страница Наши партнеры
+.our-partners {
+	overflow: hidden;
+	margin-bottom: 75px;
+	p {
+		margin-bottom: 30px;
+		color: #000;
+		font-size: 14px;
+		line-height: 30px;
+		text-align: justify;
+		hyphens: manual;
+		&.big {
+			margin-top: 45px;
+			margin-bottom: 30px;
+			font-size: 24px;
+		}
+	}
+}
+
+.our-partners-list {
+	margin-bottom: 33px;
+	li {
+		display: block;
+		overflow: hidden;
+		width: 100%;
+		padding-bottom: 0;
+		img {
+			margin-top: 5px;
+			float: left;
+			margin-right: 23px;
+			border: 0;
+			outline: 0;
+		}
+		p {
+			overflow: hidden;
+			text-align: justify;
+			hyphens: manual;
+		}
+	}
+}
+
+// Страница Все новости
+.news-section {
+	overflow: hidden;
+	margin-bottom: 124px;
+	h1 {
+		margin-bottom: 42px;
+	}
+	li {
+		display: inline-block;
+		width: 270px;
+		height: 420px;
+		margin-left: 25px;
+		&:nth-child(3n+1) {margin-left: 0;}
+		img {
+			margin-bottom: 7px;
+			border: 0;
+			outline: 0;
+		}
+		h3 {
+			margin-bottom: 14px;
+			color: #000;
+			font-size: 18px;
+			line-height: 22px;
+			font-weight: 600;
+		}
+		p {
+			height: 75px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			margin-bottom: 18px;
+			color: #000;
+			font-size: 12px;
+			line-height: 15px;
+			text-align: justify;
+			a {
+				color: #006bb7;
+			}
+		}
+		.more {
+			color: #006bb7;
+			font-size: 14px;
+			font-weight: 600;
+			text-decoration: none;
+		}
+	}
+}
+
+// Страница о нас
+.about-us {
+	overflow: hidden;
+	color: #000;
+	text-align: justify;
+	font-weight: 500;
+	li {
+		line-height: 30px;
+	}
+	p {
+		line-height: 30px;
+		margin-bottom: 30px;
+		&.last {
+			margin-bottom: 130px;
+		}
+	}
+	.about-us-tasks {
+		margin-bottom: 45px;
+		padding-left: 19px;
+		li:before {
+			content: '•';
+			margin-right: 3px;
+		}
+	}
+	h3 {
+		margin-bottom: 31px;
+		font-size: 24px;
+		font-weight: 400;
+	}
+	.about-us-rig {
+		margin-bottom: 40px;
+		li:before {
+			content: 'o';
+			margin-right: 18px;
+		}
+	}
+}
+
+// Contact
+.map {
+	margin-bottom: 36px;
+}
+.contact_form {
+	margin-top: 81px;
+	background-color: #7e7e7e;
+	padding: 63px 0 56px;
+	@extend %clear_a;
+	.container_center {
+		width: 1002px;
+	}
+	.contact_form_left {
+		float: left;
+		color: #fff;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 30px;
+		background-image: image-url('contact_arrow.png');
+		background-repeat: no-repeat;
+		background-position: top right;
+		width: 590px;
+		margin-top: 10px;
+		:last-child {
+			margin-top: 20px;
+		}
+	}
+	.tel {
+		color: #fc0;
+		font-size: 30px;
+		font-weight: 700;
+		margin: 20px 0 20px;
+		display: block;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.contact_form_right {
+		float: left;
+		width: 379px;
+		padding-left: 9px;
+		input {
+			width: 100%;
+			padding: 12px 24px;
+			&:not(:first-child) {
+				margin-top: 23px;
+			}
+		}
+		input {
+			@include border-radius(0);
+
+		}
+		input[type="text"] {
+		  @include input-placeholder {
+		    color: grey;
+			font-size: 16px;
+			font-style: italic;
+		  }
+		}
+		.btn {
+			text-transform: none;
+			font-weight: 400;
+			font-size: 16px;
+			margin-top: 35px;
+			width: 100%;
+			padding: 6px 15px 9px;
+		}
+	}
+}
+
+// Details
+.details {
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+	margin-bottom: 38px;
+	tr {
+		td {
+			padding: 10px 44px;
+			border: none;
+			text-align: left;
+			font-size: 14px;
+			line-height: 20px;
+			&:first-child {
+				background-color: #f7f7f7;
+				width: 358px;
+				font-weight: 600;
+			}
+			&:last-child {
+				padding: 10px 36px;
+			}
+		}
+		&:nth-child(odd) {
+			background-color: #e8f5ff;
+		}
+	}
+	&+p {
+		margin-bottom: 60px;
+	}
+}
+
+// Recommend letter
+.letter_grid {
+	margin-left: -30px;
+	margin-top: 30px;
+	margin-bottom: 80px;
+	@extend %clear_a;
+	.letter_grid_wrap {
+		float: left;
+		padding-left: 30px;
+		position: relative;
+		width: 33.33%;
+	}
+	.letter_grid_item {
+		position: relative;
+		&:hover {
+			.overlay {
+				display: block;
+			}
+		}
+		img {
+			width: 100%;
+		}
+		.overlay {
+			display: none;
+			position: absolute;
+			z-index: 2;
+			background-color: rgba(0, 107, 183, 0.7);
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			.plus {
+				color: #fff;
+				margin-top: 63%;
+				display: inline-block;
+				&:before {
+					content: image-url('plus.png');
+					display: inline-block;
+					vertical-align: middle;
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+	.fancybox {}
+	.letter_grid_name {
+		font-size: 18px;
+		margin-top: 21px;
+		margin-bottom: 40px;
+	}
+}
 
 /* Footer
  ----------------------------------------------------------------------------- */
