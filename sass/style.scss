@@ -413,12 +413,14 @@ input[type="text"] {
 /* Middle
  ----------------------------------------------------------------------------- */
 .main__content {
+	padding-top: 27px;
 	padding-bottom: 45px;
 	@extend %clear_a;
 }
 
 .home .main__content {
 	position: relative;
+	padding-top: 0;
 	&:before,&:after {
 		content: '';
 		display: block;
