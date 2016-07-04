@@ -336,14 +336,18 @@ input[type="text"] {
 }
 .main_slider {
 	float: left;
-	min-width: 900px;
-	width: 67%;
+	max-width: 1267px;
+	min-width: 898px;
+	// margin-left: -500px;
+	// width: 60%;
+	height: 403px;
+	margin-left: -369px;
 	.slide_item {
 		min-height: 403px;
 		position: relative;
 		background-size: cover;
 		padding-left: 20px;
-		background-position: center center;
+		background-position: center center;;
 		&:before {
 			content: '';
 			position: absolute;
@@ -357,7 +361,7 @@ input[type="text"] {
 		.slide_content {
 			margin-top: 109px;
 			float: right;
-			width: 910px;
+			width: 900px;
 			color: white;
 			font-size: 18px;
 			font-weight: 400;
@@ -397,6 +401,7 @@ input[type="text"] {
 .form_groupp {
 	font-size: 20px;
 	min-width: 270px;
+	width: 270px;
 	overflow: hidden;
 	.btn,input {
 		display: block;
@@ -408,9 +413,9 @@ input[type="text"] {
 	padding: 36px 33px 39px;
 	background-color: #e2373e;
 	color: #fff;
-	width: 270px;
 	line-height: 1.1;
 	height: 176px;
+	width: 270px;
 }
 .check_tools {
 	padding: 32px 33px 43px;
@@ -441,7 +446,7 @@ input[type="text"] {
 		z-index: -1;
 		background-image: image-url('di_line.png');
 		top: 0;
-		height: 100%;
+		bottom: 46px;
 	}
 	&:before {
 		background-color: #e8e8e8;

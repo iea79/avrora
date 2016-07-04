@@ -16,6 +16,4 @@ $(document).ready(function() {
 		$('.navbar__drop').removeClass('open');
 	});
 
-	$(".fancybox").fancybox();
-
 });
