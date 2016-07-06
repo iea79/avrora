@@ -117,7 +117,8 @@ p {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 0 -45px 0; /* отрицательный нижний отступ на высоту футера */
+    margin: 0 0 -45px 0;
+    min-width: 1200px; /* отрицательный нижний отступ на высоту футера */
     // padding: 0 0 200px 0;
 }
 
@@ -980,6 +981,7 @@ input[type="text"] {
 	position: relative;
 	z-index: 2;
 	@extend %clear_a;
+	min-width: 1200px;
 	.navbar {
 		float: left;
 		.navbar_item {
