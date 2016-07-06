@@ -10,7 +10,7 @@
 $breakpoint-small:                               480px !default;
 $breakpoint-medium:                              760px !default;
 $breakpoint-large:                               960px !default;
-$breakpoint-xlarge:                              1200px !default;
+$breakpoint-xlarge:                              1000px !default;
 
 $breakpoint-mini-max:                            ($breakpoint-small - 1) !default;
 $breakpoint-small-max:                           ($breakpoint-medium - 1) !default;
@@ -96,7 +96,7 @@ body {
 	font: 14px "Open Sans", sans-serif; 
 	line-height: 1;
 	color: #000;
-	// min-width: 1200px;
+	// min-width: 1000px;
 }
 
 a {
@@ -135,21 +135,20 @@ p {
     height: auto !important;
     margin: 0 0 -45px 0;
     width: 100%;
-    min-width: 1200px;
+    min-width: 1000px;
 }
 
 .container_center {
 	margin-left: auto;
 	margin-right: auto;
-	width: 1200px;
+	width: 1000px;
 	padding: 0 16px;
 	@extend %clear_a;
 }
 
 .page_content {
 	margin-bottom: 50px;
-	width: 868px;
-	float: left;
+	overflow: hidden;
 	h3 {
 		margin-bottom: 31px;
 		font-size: 24px;
@@ -287,7 +286,7 @@ input[type="text"] {
 .header {
 	padding: 0;
 	height: 95px;
-	min-width: 1200px;
+	min-width: 1000px;
 	@extend %clear_all;
 	.logo {
 		float: left;
@@ -299,12 +298,12 @@ input[type="text"] {
 		padding: 37px 0 44px;
 		float: right;
 		.navabr__item {
-			padding-left: 68px;
+			padding-left: 33px;
 			display: inline-block;
 			&:first-child {
 				padding-left: 0;
 				.navbar_sub {
-					padding-left: 452px;
+					padding-left: 395px;
 					&:before {
 						margin-left: 34px;
 					}
@@ -312,7 +311,7 @@ input[type="text"] {
 			}
 			&:nth-child(2) {
 				.navbar_sub {
-					padding-left: 615px;
+					padding-left: 523px;
 					&:before {
 						margin-left: 16px;
 					}
@@ -320,7 +319,7 @@ input[type="text"] {
 			}
 			&:nth-child(3) {
 				.navbar_sub {
-					padding-left: 740px;
+					padding-left: 610px;
 					&:before {
 						margin-left: 68px;
 					}
@@ -328,7 +327,7 @@ input[type="text"] {
 			}
 			&:nth-child(4) {
 				.navbar_sub {
-					padding-left: 980px;
+					padding-left: 815px;
 					&:before {
 						margin-left: 21px;
 					}
@@ -336,9 +335,9 @@ input[type="text"] {
 			}
 			&:nth-child(5) {
 				.navbar_sub {
-					padding-left: 1118px;
+					padding-left: 915px;
 					&:before {
-						margin-left: 15px;
+						margin-left: 26px;
 					}
 				}
 			}
@@ -376,12 +375,12 @@ input[type="text"] {
 		left: 0;
 		padding-bottom: 15px;
 		position: absolute;
-		min-width: 1200px;
+		min-width: 1000px;
 		&.open {
 			display: block;
 		}
 		.navbar_sub {
-			width: 1200px;
+			width: 1000px;
 			margin: 0 auto;
 			position: relative;
 			&:before {
@@ -416,7 +415,7 @@ input[type="text"] {
 	background-size: cover;
 	height: 96px;
 	@extend %clear_all;
-	min-width: 1200px;
+	min-width: 1000px;
 }
 
 /* Home slider
@@ -424,7 +423,7 @@ input[type="text"] {
 .home_slider {
 	position: relative;
 	height: 403px;
-	min-width: 1200px;
+	min-width: 1000px;
 	&:before {
 		content: '';
 		display: block;
@@ -451,12 +450,12 @@ input[type="text"] {
 }
 .main_slider {
 	float: left;
-	max-width: 1267px;
+	max-width: 1167px;
 	min-width: 898px;
 	// margin-left: -500px;
 	// width: 60%;
 	height: 403px;
-	margin-left: -369px;
+	margin-left: -469px;
 	.slide_item {
 		min-height: 403px;
 		position: relative;
@@ -476,7 +475,7 @@ input[type="text"] {
 		.slide_content {
 			margin-top: 109px;
 			float: right;
-			width: 900px;
+			width: 700px;
 			color: white;
 			font-size: 18px;
 			font-weight: 400;
@@ -485,7 +484,7 @@ input[type="text"] {
 		}
 		.slide_title {
 			text-shadow: 2.4px 4.4px 5px rgba(0, 0, 0, 0.5);
-			font-size: 48px;
+			font-size: 44px;
 			font-weight: 600;
 			margin-bottom: 17px;
 		}
@@ -493,7 +492,7 @@ input[type="text"] {
 			padding-bottom: 17px;
 			margin-bottom: 25px;
 			border-bottom: 1px solid #fff;
-			max-width: 616px;
+			max-width: 456px;
 		}
 		.slide_link {
 			color: white;
@@ -577,18 +576,18 @@ input[type="text"] {
 		width: 60%;
 	}
 	.right_content {
-		padding: 44px;
+		padding: 25px 44px;
 		float: left;
-		width: 698px;
-		line-height: 30px;
+		width: 498px;
+		line-height: 26px;
 		.title {
-			font-size: 36px;
+			font-size: 33px;
 			font-weight: 400;
 			text-transform: uppercase;
-			margin-bottom: 31px;
+			margin-bottom: 22px;
 		}
 		p+p {
-			margin-top: 30px;
+			margin-top: 8px;
 		}
 	}
 }
@@ -761,17 +760,21 @@ input[type="text"] {
 
 // Страница Все новости
 .news-section-list {
+	margin-left: -10px;
+	@extend %clear_a;
 	li {
 		display: inline-block;
-		width: 270px;
+		width: 33.299999999999997%;
 		height: 420px;
-		margin-left: 25px;
 		line-height: 1;
+		padding-left: 20px;
+		float: left;
 		&:nth-child(3n+1) {margin-left: 0;}
 		img {
 			margin-bottom: 7px;
 			border: 0;
 			outline: 0;
+			max-width: 100%;
 		}
 		h3 {
 			margin-bottom: 14px;
@@ -909,6 +912,7 @@ input[type="text"] {
 			text-align: left;
 			font-size: 14px;
 			line-height: 20px;
+			vertical-align: top;
 			&:first-child {
 				background-color: #f7f7f7;
 				width: 358px;
@@ -974,9 +978,12 @@ input[type="text"] {
 	}
 	.fancybox {}
 	.letter_grid_name {
-		font-size: 18px;
-		margin-top: 21px;
+		font-size: 16px;
+		margin-top: 18px;
 		margin-bottom: 40px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 }
 
@@ -989,12 +996,12 @@ input[type="text"] {
 	position: relative;
 	z-index: 2;
 	@extend %clear_a;
-	min-width: 1200px;
+	min-width: 1000px;
 	.navbar {
 		float: left;
 		.navbar_item {
 			display: inline-block;
-			padding: 13px 43px;
+			padding: 13px 26px;
 			&:first-child {
 				padding-left: 0;
 			}
