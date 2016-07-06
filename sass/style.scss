@@ -26,6 +26,7 @@ $second_font:									 'Prosto One';
 		content: '';
 		display: table;
 		clear: both;
+		width: 100%;
 	}
 }
 
@@ -34,6 +35,7 @@ $second_font:									 'Prosto One';
 		content: '';
 		display: table;
 		clear: both;
+		width: 100%;
 	}
 }
 
@@ -79,7 +81,6 @@ img.fl_right {
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
 	display: block;
-	@include box-sizing(border-box);
 }
 
 html {
@@ -92,11 +93,10 @@ html,body,.wrapper {
 }
 
 body { 
-	font: 14px/18px $main_font, sans-serif; 
+	font: 14px "Open Sans", sans-serif; 
 	line-height: 1;
 	color: #000;
-	width: 100%;
-	min-width: 1200px;
+	// min-width: 1200px;
 }
 
 a {
@@ -133,10 +133,9 @@ p {
 .wrapper {
     min-height: 100%;
     height: auto !important;
-    height: 100%;
     margin: 0 0 -45px 0;
+    width: 100%;
     min-width: 1200px;
-    overflow: hidden;
 }
 
 .container_center {
@@ -149,8 +148,8 @@ p {
 
 .page_content {
 	margin-bottom: 50px;
-	overflow: hidden;
 	width: 868px;
+	float: left;
 	h3 {
 		margin-bottom: 31px;
 		font-size: 24px;
@@ -288,6 +287,7 @@ input[type="text"] {
 .header {
 	padding: 0;
 	height: 95px;
+	min-width: 1200px;
 	@extend %clear_all;
 	.logo {
 		float: left;
@@ -336,7 +336,7 @@ input[type="text"] {
 			}
 			&:nth-child(5) {
 				.navbar_sub {
-					padding-left: 1048px;
+					padding-left: 1118px;
 					&:before {
 						margin-left: 15px;
 					}
@@ -369,13 +369,14 @@ input[type="text"] {
 	}
 	.navbar__drop {
 		display: none;
-		position: absolute;
 		z-index: 300;
 		top: 95px;
 		background-color: #f7f7f7;
 		width: 100%;
 		left: 0;
 		padding-bottom: 15px;
+		position: absolute;
+		min-width: 1200px;
 		&.open {
 			display: block;
 		}
@@ -569,7 +570,7 @@ input[type="text"] {
 		background-color: #e8e8e8;
 		left: 0;
 		width: 40%;
-	}
+	} 
 	&:after {
 		right: 0;
 		background-image: image-url('texture3.jpg');
