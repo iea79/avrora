@@ -129,8 +129,8 @@ p {
     height: auto !important;
     height: 100%;
     margin: 0 0 -45px 0;
-    min-width: 1200px; /* отрицательный нижний отступ на высоту футера */
-    // padding: 0 0 200px 0;
+    min-width: 1200px;
+    overflow: hidden;
 }
 
 .container_center {
