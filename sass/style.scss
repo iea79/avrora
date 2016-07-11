@@ -198,11 +198,11 @@ p {
 	border: 1px solid #fff;
 	color: #fff;
 }
-input {
+input:not([type='file']) {
 	background-color: white;
 	@include border-radius(2px);
 	padding: 9px 18px 8px;
-	border: none;
+	border: 1px solid #e6e6e6;
 }
 
 @import "compass/css3/user-interface";
@@ -212,6 +212,9 @@ input[type="text"] {
     color: #b3b3b3;
 	font-size: 13px;
 	font-style: italic;
+  }
+  &+input {
+  	margin-top: 23px;
   }
 }
 
@@ -984,6 +987,37 @@ input[type="text"] {
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+	}
+}
+
+// Contact page
+.contact_page_form {
+	max-width: 500px;
+	padding: 15px;
+	background-color: #f7f7f7;
+	input {
+		display: block;
+		width: 300px;
+		&+input {
+
+		}
+		&[type="file"] {
+			margin-top: 13px;
+		}
+	}
+	textarea {
+		display: block;
+		width: 100%;
+		margin-top: 23px;
+		margin-bottom: 17px;
+		min-height: 100px;
+		padding: 10px 18px;
+		border: 1px solid #e6e6e6;
+	}
+	.btn {
+		margin-top: 23px;
+		width: 100%;
+		padding: 11px;
 	}
 }
 
